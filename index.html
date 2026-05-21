@@ -1,0 +1,38 @@
+<!-- index.html - Main page that loads all components -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Tyler M. Jones | Web Developer & Designer — Medium Blue Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portfolio-app">
+        <div id="nav-container"></div>
+        <main class="main-content-area">
+            <div id="body-container"></div>
+        </main>
+        <div id="footer-container"></div>
+    </div>
+
+    <div id="searchOverlayGlobal" class="search-overlay-global">
+        <div class="search-dialog">
+            <div class="search-dialog-header">
+                <h3><i class="fas fa-search"></i> Search in site</h3>
+                <button class="close-search-dialog" id="closeSearchDialogBtn">&times;</button>
+            </div>
+            <input type="text" id="globalSearchField" placeholder="Type keywords... projects, design, skills, networking, unity">
+            <div id="searchResultsArea" class="search-results-area-global">
+                <p class="search-initial-hint">🔍 Find projects, testimonials, skills & latest updates</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="globalToast" class="toast-notification-global">✨ Action completed</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
